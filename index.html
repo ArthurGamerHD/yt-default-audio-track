@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <style>
+      html {
+        min-height: 20em;
+        min-width: 15em;
+        background: #292c33;
+        color: #ced4de;
+      }
+
+      :root {
+        --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+          0 1px 2px -1px rgba(0, 0, 0, 0.1);
+        --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
+          0 1px 2px -1px var(--tw-shadow-color);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --input: 240 3.7% 15.9%;
+      }
+
+      .button {
+        border: 0;
+        background-color: hsl(240 5.9% 10%);
+        border-radius: calc(0.5rem - 2px);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: hsl(0 0% 98%);
+
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+      }
+
+      .button:hover {
+        background-color: hsl(240, 3%, 21%);
+      }
+
+      .white {
+        background-color: hsl(0 0% 98%);
+        color: hsl(240 5.9% 10%);
+      }
+      .white:hover {
+        background-color: hsl(0 0% 98% / 0.9);
+      }
+
+      .border-input {
+        border: 1px solid hsl(240, 3%, 21%);
+      }
+
+      .flex-center {
+        display: flex;
+        justify-content: center;
+      }
+
+      input {
+        border: 0;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        background-color: transparent;
+        border-color: rgb(100, 100, 100);
+        border-width: 1px;
+        border-style: solid;
+        border-radius: calc(0.5rem - 2px);
+        width: 100%;
+        height: 2.25rem;
+        color: rgb(250, 250, 250);
+        margin-top: 6px;
+        margin-bottom: 6px;
+      }
+
+      input:focus-visible {
+        --tw-ring-color: hsl(var(--ring));
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+          var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+          calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+          var(--tw-shadow, 0 0 #0000);
+        outline: 1px solid white;
+        outline-offset: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-center">
+      <img width="100" src="/icon128.png" />
+    </div>
+    <h1 style="font-size: 1rem">Youtube Default Audio Track</h1>
+
+    <div>
+      <label for="audio-track-button-title">Audio Track Button Title</label>
+      <input id="audio-track-button-title" maxlength="20" />
+    </div>
+    <div>
+      <label for="select-audio-track">Select Audio Track</label>
+      <input id="select-audio-track" maxlength="20" />
+    </div>
+    <div
+      class="flex-center"
+      style="column-gap: 6px; margin-top: 8px; margin-bottom: 4px"
+    >
+      <button id="save" class="button white">Save</button>
+      <button id="cancel" class="button border-input">Cancel</button>
+      <button id="reset" class="button border-input">Reset</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "Youtube Default Audio Track",
+  "description": "Auto change Youtube audio track to your preference",
+  "version": "1.0",
+  "permissions": ["scripting", "debugger", "storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Click Me",
+    "default_popup": "index.html",
+    "default_icon": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/watch*"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
