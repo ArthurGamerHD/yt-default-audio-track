@@ -1,6 +1,6 @@
 {
-  "name": "Youtube Default Audio Track",
-  "description": "Auto change Youtube audio track to your preference",
+  "name": "Youtube™ Default Audio Track",
+  "description": "Auto change Youtube™ audio track to your preference",
   "version": "1.0.0",
   "permissions": ["storage"],
   "host_permissions": ["https://*.youtube.com/*"],
