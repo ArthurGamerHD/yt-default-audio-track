@@ -2,11 +2,11 @@
   "name": "Youtube Default Audio Track",
   "description": "Auto change Youtube audio track to your preference",
   "version": "1.0",
-  "permissions": ["scripting", "debugger", "storage", "tabs"],
-  "host_permissions": ["<all_urls>"],
+  "permissions": ["storage"],
+  "host_permissions": ["https://*.youtube.com/*"],
   "manifest_version": 3,
   "action": {
-    "default_title": "Click Me",
+    "default_title": "YTDAT",
     "default_popup": "index.html",
     "default_icon": "icon128.png"
   },
