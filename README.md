@@ -6,4 +6,8 @@ An extension that effortlessly switches the audio track to your preferred langua
 
 ---
 
-This extensions is written to use bu myself but if it is working for others as well, feel free to use it. And if found any problem, please raise an issues. However, don't expect a quick fix or response.
+This extensions is written to use by myself but if it is working for others as well, feel free to use it. And if found any problem, please raise an issues. However, don't expect a quick fix or response.
+
+---
+
+An "userscript" variant `userscript/yt-default-audio-track.user.js` can be used on tampermonkey or similar extensions in 
